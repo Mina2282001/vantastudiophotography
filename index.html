@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<!-- ============================================================
+   VANTA STUDIO - PREMIUM PHOTOGRAPHY PORTFOLIO DEMO
+
+
+
+   HOW TO UPDATE (Beginner Guide):
+   1. Text content: Find the text between HTML tags and edit it
+   2. Images: Replace files in the "images/" folder, keep same names
+   3. Colors: Edit the CSS variables at the top of style.css
+   4. Links: Change href="#" to your real social media URLs
+
+   FILE STRUCTURE:
+   - index.html    (this file - the main page)
+   - style.css     (all the styling and animations)
+   - images/       (all your photos go here)
+   ============================================================ -->
+<html lang="en">
+<head>
+     <!-- Meta tags - tell browsers how to display the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ============================================================
+       SEO & META TAGS
+       These tags help search engines understand your website.
+       They also control how your site appears when shared on social media.
+
+       IMPORTANT: Update the content="..." values with your real info!
+       ============================================================ -->
+
+    <!-- Basic SEO: Tells search engines what this page is about -->
+    <meta name="description" content="VANTA STUDIO — Premium wedding, portrait & cinematic photography. Capturing timeless moments with a minimal, luxury aesthetic. Based in Cairo, Egypt. Available worldwide.">
+    <meta name="keywords" content="photography, wedding photographer, portrait photography, cinematic films, event coverage, luxury photography, Cairo photographer, Egypt photography, professional photographer, photo studio">
+    <meta name="author" content="VANTA STUDIO">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- Canonical URL: Prevents duplicate content issues -->
+    <link rel="canonical" href="https://vantastudiophotography.netlify.app/">
+    <!-- Sitemap reference: Helps search engines find all your pages -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+
+
+
+    <!-- Favicon: The small icon in browser tabs -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Language & Region: Helps with local SEO -->
+    <meta name="language" content="en">
+    <meta name="geo.region" content="EG-C">
+    <meta name="geo.placename" content="Cairo">
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp sharing) -->
+    <meta property="og:title" content="VANTA STUDIO — Premium Photography">
+    <meta property="og:description" content="Wedding, portrait & cinematic photography with a timeless aesthetic. Capturing extraordinary moments since 2018.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vantastudiophotography.netlify.app/">
+    <meta property="og:image" content="https://vantastudiophotography.netlify.app/images/photographer.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="VANTA STUDIO">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VANTA STUDIO — Premium Photography">
+    <meta name="twitter:description" content="Wedding, portrait & cinematic photography with a timeless aesthetic. Based in Cairo, Egypt.">
+    <meta name="twitter:image" content="https://vantastudiophotography.netlify.app/images/photographer.jpg">
+    <!-- Preconnect to external domains (speeds up loading) -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <!-- Preload critical fonts for faster rendering -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" as="style">
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#050505">
+    <meta name="msapplication-TileColor" content="#050505">
+
+<title>VANTA STUDIO — Photography</title>
+
+    <!-- Link to the CSS file (all the styling) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome - for icons (WhatsApp, Instagram, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Google Fonts - the typography for the website -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+    <!-- ============================================================
+       JSON-LD STRUCTURED DATA
+       This code helps Google understand your business type, location,
+       services, and contact info. It appears in search results as
+       "rich snippets" (star ratings, business info boxes, etc.)
+
+       IMPORTANT: Update ALL placeholder URLs and info with your real details!
+       ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://vantastudiophotography.netlify.app/#website",
+          "url": "https://vantastudiophotography.netlify.app/",
+          "name": "VANTA STUDIO",
+          "description": "Premium wedding, portrait & cinematic photography studio",
+          "publisher": {
+            "@id": "https://vantastudiophotography.netlify.app/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://vantastudiophotography.netlify.app/#organization",
+          "name": "VANTA STUDIO",
+          "url": "https://vantastudiophotography.netlify.app/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://vantastudiophotography.netlify.app/images/logo.png",
+            "width": 512,
+            "height": 512
+          },
+          "sameAs": [
+            "https://www.instagram.com/vanta.studio",
+            "https://www.facebook.com/vantastudio",
+            "https://www.behance.net/vantastudio"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+20-127-486-8767",
+            "contactType": "Bookings & Inquiries",
+            "availableLanguage": ["English", "Arabic"],
+            "areaServed": "EG",
+            "email": "hello@vantastudio.com"
+          }
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://vantastudiophotography.netlify.app/#localbusiness",
+          "name": "VANTA STUDIO",
+          "description": "Luxury photography studio specializing in weddings, portraits, and cinematic storytelling.",
+          "url": "https://vantastudiophotography.netlify.app/",
+          "telephone": "+20-127-486-8767",
+          "email": "hello@vantastudio.com",
+          "image": "https://vantastudiophotography.netlify.app/images/studio.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Cairo",
+            "addressRegion": "Cairo Governorate",
+            "addressCountry": "EG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "30.0444",
+            "longitude": "31.2357"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "20:00"
+          },
+          "priceRange": "$$$",
+          "currenciesAccepted": "EGP, USD, EUR",
+          "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+          "areaServed": {
+            "@type": "Place",
+            "name": "Cairo, Egypt & Worldwide"
+          }
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://vantastudiophotography.netlify.app/#service",
+          "name": "VANTA STUDIO Photography Services",
+          "provider": {
+            "@id": "https://vantastudiophotography.netlify.app/#organization"
+          },
+          "serviceType": [
+            "Wedding Photography",
+            "Portrait Photography",
+            "Cinematic Film Production",
+            "Event Photography"
+          ],
+          "areaServed": "Worldwide",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Photography Packages",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Wedding Photography",
+                  "description": "Full-day wedding coverage from preparation to the last dance."
+                },
+                "price": "1500.00",
+                "priceCurrency": "USD",
+                "priceValidUntil": "2026-12-31",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Portrait Sessions",
+                  "description": "Personal branding, headshots, and creative portraits."
+                },
+                "price": "300.00",
+                "priceCurrency": "USD",
+                "priceValidUntil": "2026-12-31",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Cinematic Films",
+                  "description": "Short-form cinematic stories with professional color grading."
+                },
+                "price": "2000.00",
+                "priceCurrency": "USD",
+                "priceValidUntil": "2026-12-31",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Event Coverage",
+                  "description": "Corporate events, product launches, and celebrations."
+                },
+                "price": "800.00",
+                "priceCurrency": "USD",
+                "priceValidUntil": "2026-12-31",
+                "availability": "https://schema.org/InStock"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "@id": "https://vantastudiophotography.netlify.app/images/og-image.jpg",
+          "url": "https://vantastudiophotography.netlify.app/images/og-image.jpg",
+          "width": 1200,
+          "height": 630,
+          "caption": "VANTA STUDIO — Premium Photography Portfolio"
+        }
+      ]
+    }
+    </script>
+
+    <!-- ============================================================
+       BREADCRUMB STRUCTURED DATA
+       Helps Google show breadcrumb navigation in search results.
+       Update the URLs to match your actual page structure.
+       ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://vantastudiophotography.netlify.app/"
+        }
+      ]
+    }
+    </script>
+<base target="_blank">
+<base target="_blank">
+</head>
+<body>
+    <!-- ============================================================
+       SKIP TO CONTENT LINK
+       This hidden link lets keyboard users jump straight to the main
+       content without tabbing through the entire navigation menu.
+       It only appears when focused (pressed Tab key).
+       ============================================================ -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+
+
+    <!-- ============================================================
+       SECTION 1: PRELOADER
+       This shows while the page loads. Edit the text below.
+       ============================================================ -->
+    <div class="preloader" id="preloader" role="status" aria-live="polite" aria-label="Page loading">
+        <div class="preloader-inner">
+            <!-- This number counts from 0 to 100 -->
+            <div class="preloader-counter" id="preloaderCounter">0</div>
+            <div class="preloader-line"></div>
+            <!-- EDIT THIS: Your brand name during loading -->
+            <div class="preloader-brand">VANTA STUDIO</div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+       SECTION 2: CUSTOM CURSOR
+       This creates the gold ring that follows your mouse.
+       No edits needed here - it works automatically!
+       ============================================================ -->
+    <!-- ============================================================
+       SECTION 3: NAVIGATION HEADER
+       The fixed menu at the top of the page.
+       EDIT: Change the brand name or add/remove menu items.
+       ============================================================ -->
+    <header class="site-header" id="header" role="banner">
+        <!-- Brand Logo / Name -->
+        <a class="brand" href="#home">
+            <span class="brand-line">VANTA</span>
+            <span class="brand-line accent">STUDIO</span>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+            <a href="#home" class="nav-link active" data-text="Home" aria-current="page">Home</a>
+            <a href="#about" class="nav-link" data-text="About">About</a>
+            <a href="#portfolio" class="nav-link" data-text="Portfolio">Portfolio</a>
+            <a href="#services" class="nav-link" data-text="Services">Services</a>
+            <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button (hamburger icon) -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </button>
+    </header>
+
+    <!-- ============================================================
+       SECTION 4: MOBILE MENU
+       Full-screen menu that appears on mobile phones.
+       EDIT: Change social media links at the bottom.
+       ============================================================ -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-bg" aria-hidden="true"></div>
+        <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+            <a href="#home" class="mobile-link" data-index="01">Home</a>
+            <a href="#about" class="mobile-link" data-index="02">About</a>
+            <a href="#portfolio" class="mobile-link" data-index="03">Portfolio</a>
+            <a href="#services" class="mobile-link" data-index="04">Services</a>
+            <a href="#contact" class="mobile-link" data-index="05">Contact</a>
+        </nav>
+        <div class="mobile-footer">
+            <!-- EDIT: Your location -->
+            <span class="mobile-footer-text">Cairo, Egypt</span>
+            <div class="mobile-social">
+                <!-- EDIT: Replace # with your real social media URLs -->
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+       MAIN CONTENT AREA
+       All the sections of your website go inside here.
+       ============================================================ -->
+    <main id="main-content" role="main" tabindex="-1">
+
+        <!-- ============================================================
+           SECTION 5: HERO (Home)
+           The big first section with your name and photo.
+           EDIT: Change text, buttons, and social links.
+           ============================================================ -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <!-- Canvas for floating particles (automatic, no edits needed) -->
+            <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+            <div class="hero-vignette" aria-hidden="true"></div>
+
+            <div class="hero-content">
+                <!-- Left side: Text content -->
+                <div class="hero-left">
+                    <!-- Meta info line -->
+                    <div class="hero-meta">
+                        <!-- EDIT: Your establishment year -->
+                        <span class="hero-meta-year">Est. 2018</span>
+                        <span class="hero-meta-divider"></span>
+                        <!-- EDIT: Your location -->
+                        <span class="hero-meta-location">Cairo, Egypt</span>
+                    </div>
+
+                    <!-- Main Title -->
+                    <h1 class="hero-title" id="hero-title">
+                        <span class="title-word" data-delay="0">VANTA</span>
+                        <span class="title-word accent" data-delay="1">STUDIO</span>
+                    </h1>
+
+                    <!-- Typewriter effect text (auto-typing) -->
+                    <p class="hero-subtitle" id="typewriter"></p>
+
+                    <!-- Description paragraph -->
+                    <p class="hero-desc">
+                        Capturing the extraordinary in the ordinary. 
+                        Wedding, portrait & cinematic photography with a timeless aesthetic.
+                    </p>
+
+                    <!-- Action Buttons -->
+                    <div class="hero-actions">
+                        <a class="btn-primary magnetic" href="#portfolio">
+                            <span class="btn-text">Explore Work</span>
+                            <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a class="btn-ghost magnetic" href="#contact">
+                            <span class="btn-text">Get in Touch</span>
+                        </a>
+                    </div>
+
+                    <!-- Social Media Icons -->
+                    <div class="hero-social">
+                        <!-- EDIT: Replace # with your real URLs -->
+                        <a href="#" class="social-link magnetic" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="social-link magnetic" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link magnetic" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link magnetic" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right side: Your portrait photo -->
+                <div class="hero-right">
+                    <div class="portrait-wrapper">
+                        <div class="portrait-frame">
+                            <!-- EDIT: Replace with your photo file name -->
+                            <img src="images/photographer.jpg" alt="VANTA STUDIO — Premium wedding and portrait photographer in Cairo, Egypt" id="heroPortrait" loading="eager">
+                        </div>
+                        <div class="portrait-ring"></div>
+                        <!-- Availability tag -->
+                        <div class="portrait-tag">
+                            <span class="tag-pulse"></span>
+                            <span>Available for bookings</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll down hint -->
+            <div class="scroll-hint" aria-hidden="true">
+                <div class="scroll-hint-line">
+                    <div class="scroll-hint-dot"></div>
+                </div>
+                <span class="scroll-hint-text">Scroll</span>
+            </div>
+
+            <!-- Large watermark text in background -->
+            <div class="hero-watermark" aria-hidden="true">VS</div>
+        </section>
+
+       
+        <!-- ============================================================
+           SECTION 7: ABOUT 
+           EDIT: Change the title, paragraphs, and stats.
+           ============================================================ -->
+        <section class="about-section" id="about" aria-labelledby="about-title">
+            <!-- Section eyebrow: number + label -->
+            <div class="section-eyebrow">
+                <span class="eyebrow-num">01</span>
+                <span class="eyebrow-line"></span>
+                <span class="eyebrow-text">About</span>
+            </div>
+
+            <div class="about-content">
+                <!-- Left column: Title and text -->
+                <div class="about-left">
+                    <!-- EDIT: Your about section title -->
+                    <h2 class="about-title" id="about-title">Visual storyteller<br>with a minimal soul.</h2>
+
+                    <!-- EDIT: First paragraph about yourself -->
+                    <p class="about-text">
+                        I specialize in capturing real moments with a minimal aesthetic. 
+                        My work blends cinematic mood, natural light, and strong composition 
+                        to create images that feel timeless and authentic.
+                    </p>
+
+                    <!-- EDIT: Second paragraph -->
+                    <p class="about-text">
+                        From weddings to personal portraits, each shoot is a collaboration. 
+                        I aim to make you comfortable, confident, and captured in your best light.
+                    </p>
+
+                    <!-- Button linking to contact -->
+                    <div class="lets-connect-button"><a class="btn-outline" href="#contact">
+                        <span>Let's Connect</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a></div>
+                </div>
+
+                <!-- Right column: Stats cards -->
+                <div class="about-right">
+                    <div class="stats-grid">
+                        <!-- Stat Card 1 -->
+                        <div class="stat-card">
+                            <!-- EDIT: Number and label -->
+                            <span class="stat-number" data-count="8">0</span>
+                            <span class="stat-suffix">+</span>
+                            <span class="stat-label">Years of experience</span>
+                        </div>
+
+                        <!-- Stat Card 2 -->
+                        <div class="stat-card">
+                            <span class="stat-number" data-count="120">0</span>
+                            <span class="stat-suffix">+</span>
+                            <span class="stat-label">Projects delivered</span>
+                        </div>
+
+                        <!-- Stat Card 3 -->
+                        <div class="stat-card">
+                            <span class="stat-number" data-count="100">0</span>
+                            <span class="stat-suffix">%</span>
+                            <span class="stat-label">Client satisfaction</span>
+                        </div>
+
+                        <!-- Stat Card 4 -->
+                        <div class="stat-card">
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-suffix">+</span>
+                            <span class="stat-label">Happy couples</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+           SECTION 8: PORTFOLIO 
+           EDIT: Change project titles, descriptions, and image paths.
+           ============================================================ -->
+          <section class="portfolio-section" id="portfolio" aria-labelledby="portfolio-title">
+            <div class="section-eyebrow">
+                <span class="eyebrow-num">02</span>
+                <span class="eyebrow-line"></span>
+                <span class="eyebrow-text">Portfolio</span>
+            </div>
+
+            <!-- Portfolio intro text -->
+            <div class="portfolio-intro">
+                <h2 class="portfolio-title" id="portfolio-title">Selected Works</h2>
+                <p class="portfolio-desc">
+                    A curated collection of wedding, portrait, and lifestyle photography 
+                    — soft tones, natural light, and authentic moments.
+                </p>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+
+                <!-- Portfolio Card 1: Wheels & Roads -->
+                <article class="portfolio-card featured" 
+                         data-images="images/car1.jpg,images/car2.jpg,images/car3.jpg,images/car4.jpg">
+                    <div class="portfolio-card-image">
+                        <!-- EDIT: Main thumbnail image -->
+                        <img src="images/car1.jpg" alt="Luxury automotive photography — Wheels & Roads portfolio showcase by VANTA STUDIO" loading="lazy" decoding="async">
+                        <!-- Overlay with info (appears on hover) -->
+                        <div class="portfolio-card-overlay">
+                            <span class="portfolio-card-category">Automotive</span>
+                            <h3>Wheels & Roads</h3>
+                            <button class="portfolio-card-btn" aria-label="View full project gallery">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Portfolio Card 2: Urban Streets -->
+                <article class="portfolio-card" 
+                         data-images="images/streat1.jpg,images/streat2.jpg">
+                    <div class="portfolio-card-image">
+                        <img src="images/streat1.jpg" alt="Urban street photography — city life and architecture portfolio by VANTA STUDIO" loading="lazy" decoding="async">
+                        <div class="portfolio-card-overlay">
+                            <span class="portfolio-card-category">Street</span>
+                            <h3>Urban Streets</h3>
+                            <button class="portfolio-card-btn" aria-label="View full project gallery">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Portfolio Card 3: Wedding -->
+                <article class="portfolio-card" 
+                         data-images="images/wedding1.jpg,images/wedding2.jpg,images/wedding3.jpg">
+                    <div class="portfolio-card-image">
+                        <img src="images/wedding1.jpg" alt="Wedding photography — elegant ceremony and celebration moments by VANTA STUDIO" loading="lazy" decoding="async">
+                        <div class="portfolio-card-overlay">
+                            <span class="portfolio-card-category">Wedding</span>
+                            <h3>Wedding Photography</h3>
+                            <button class="portfolio-card-btn" aria-label="View full project gallery">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Portfolio Card 4: Portraits -->
+                <article class="portfolio-card featured" 
+                         data-images="images/model1.jpg,images/model2.jpg,images/model3.jpg">
+                    <div class="portfolio-card-image">
+                        <img src="images/model1.jpg" alt="Professional portrait photography — fashion and editorial portfolio by VANTA STUDIO" loading="lazy" decoding="async">
+                        <div class="portfolio-card-overlay">
+                            <span class="portfolio-card-category">Portrait</span>
+                            <h3>Portraits</h3>
+                            <button class="portfolio-card-btn" aria-label="View full project gallery">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+           SECTION 9: SERVICES (From Website 2 - Keep the fancy version)
+           EDIT: Change service names, descriptions, and prices.
+           ============================================================ -->
+        <section class="services-section" id="services" aria-labelledby="services-title">
+            <div class="section-eyebrow">
+                <span class="eyebrow-num">03</span>
+                <span class="eyebrow-line"></span>
+                <span class="eyebrow-text">Services</span>
+            </div>
+
+            <div class="services-header">
+                <h2 class="services-title" id="services-title">What I <em>create</em> for you.</h2>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card" data-index="01">
+                    <div class="service-card-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 -235 1152 1152" width="24" height="24">
+  <g transform="scale(1,-1) translate(0,-819)">
+    <path d="M960 448q0 -91 -35.5 -174t-95.5 -143t-143 -95.5t-174 -35.5t-174 35.5t-143 95.5t-95.5 143t-35.5 174q0 163 103.5 286.5t260.5 153.5l-108 72l128 64h128l128 -64l-108 -72q157 -30 260.5 -153.5t103.5 -286.5zM512 768q-87 0 -160.5 -43t-116.5 -116.5t-43 -160.5 t43 -160.5t116.5 -116.5t160.5 -43t160.5 43t116.5 116.5t43 160.5t-43 160.5t-116.5 116.5t-160.5 43z" fill="currentColor"/>
+  </g>
+</svg></div>
+                    <h3 class="service-card-title">Wedding Photography</h3>
+                    <p class="service-card-desc">
+                        Capturing your most precious day with elegance and emotion. 
+                        From preparation to the last dance.
+                    </p>
+                    <div class="service-card-price">From $1,500</div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card" data-index="02">
+                    <div class="service-card-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <h3 class="service-card-title">Portrait Sessions</h3>
+                    <p class="service-card-desc">
+                        Personal branding, headshots, and creative portraits 
+                        that tell your unique story.
+                    </p>
+                    <div class="service-card-price">From $300</div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card" data-index="03">
+                    <div class="service-card-icon">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <h3 class="service-card-title">Cinematic Films</h3>
+                    <p class="service-card-desc">
+                        Short-form cinematic stories with professional 
+                        color grading and sound design.
+                    </p>
+                    <div class="service-card-price">From $2,000</div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card" data-index="04">
+                    <div class="service-card-icon">
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </div>
+                    <h3 class="service-card-title">Event Coverage</h3>
+                    <p class="service-card-desc">
+                        Corporate events, product launches, and celebrations 
+                        documented with artistic flair.
+                    </p>
+                    <div class="service-card-price">From $800</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+           SECTION 10: TESTIMONIALS 
+           EDIT: Change client names, quotes, and roles.
+           ============================================================ -->
+        <section class="testimonials-section" aria-label="Client testimonials and reviews">
+            <div class="section-eyebrow center">
+                <span class="eyebrow-num">04</span>
+                <span class="eyebrow-line"></span>
+                <span class="eyebrow-text">Testimonials</span>
+            </div>
+
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-track" id="testimonialTrack">
+
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-quote">"</div>
+                        <p class="testimonial-text">
+                            The team captured our wedding day with such artistry and emotion. 
+                            Every photo feels like a painting. We couldn't be happier.
+                        </p>
+                        <div class="testimonial-author">
+                            <!-- Avatar color gradient -->
+                            <!-- <div class="testimonial-avatar" style="background: linear-gradient(135deg, #c9a96e, #8b7355);"></div> -->
+                            <div class="testimonial-info">
+                                <span class="testimonial-name">Ahmed & Sara</span>
+                                <span class="testimonial-role">Wedding Clients, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-quote">"</div>
+                        <p class="testimonial-text">
+                            The portrait session was incredible. The team made me feel 
+                            completely at ease and the results were absolutely stunning.
+                        </p>
+                        <div class="testimonial-author">
+                            <!-- <div class="testimonial-avatar" style="background: linear-gradient(135deg, #a88a55, #c9a96e);"></div> -->
+                            <div class="testimonial-info">
+                                <span class="testimonial-name">Layla Hassan</span>
+                                <span class="testimonial-role">Portrait Client, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-quote">"</div>
+                        <p class="testimonial-text">
+                            Our corporate event coverage was phenomenal. The cinematic reel 
+                            became the highlight of our year-end presentation.
+                        </p>
+                        <div class="testimonial-author">
+                            <!-- <div class="testimonial-avatar" style="background: linear-gradient(135deg, #d4b87a, #a88a55);"></div> -->
+                            <div class="testimonial-info">
+                                <span class="testimonial-name">Omar Khalil</span>
+                                <span class="testimonial-role">CEO, NileTech</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Navigation arrows and dots -->
+                <div class="testimonial-nav">
+                    <button class="testimonial-prev" id="testPrev" aria-label="Previous testimonial"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+                    <div class="testimonial-dots" id="testDots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-next" id="testNext" aria-label="Next testimonial"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+           SECTION 11: CONTACT (From Website 1 - Simpler Version)
+           EDIT: Change email, location, and social links.
+           ============================================================ -->
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="section-eyebrow">
+                <span class="eyebrow-num">05</span>
+                <span class="eyebrow-line"></span>
+                <span class="eyebrow-text">Contact</span>
+            </div>
+
+            <div class="contact-content">
+                <!-- Left side: Info -->
+                <div class="contact-left">
+                    <h2 class="contact-title" id="contact-title">Let's create<br>something beautiful.</h2>
+                    <p class="contact-text">
+                        Send an email or connect with me on social media 
+                        for bookings and collaborations.
+                    </p>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>hello@vantastudio.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Cairo, Egypt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right side: Contact links -->
+                <div class="contact-right">
+                    <div class="contact-links">
+
+                        <!-- Email Link -->
+                        <a class="contact-link" href="mailto:hello@vantastudio.com">
+                            <span class="contact-link-icon"><i class="fa-regular fa-envelope"></i></span>
+                            <span class="contact-link-text">
+                                <span class="contact-link-label">Email</span>
+                                <span class="contact-link-value">hello@vantastudio.com</span>
+                            </span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                        <!-- Instagram Link -->
+                        <a class="contact-link" href="#" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-link-icon"><i class="fa-brands fa-instagram"></i></span>
+                            <span class="contact-link-text">
+                                <span class="contact-link-label">Instagram</span>
+                                <span class="contact-link-value">@vanta.studio</span>
+                            </span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                        <!-- WhatsApp Link -->
+                        <a class="contact-link" href="https://wa.me/201274868767" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-link-icon"><i class="fa-brands fa-whatsapp"></i></span>
+                            <span class="contact-link-text">
+                                <span class="contact-link-label">WhatsApp</span>
+                                <span class="contact-link-value">+20 127 486 8767</span>
+                            </span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                        <!-- Facebook Link -->
+                        <a class="contact-link" href="#" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-link-icon"><i class="fa-brands fa-facebook-f"></i></span>
+                            <span class="contact-link-text">
+                                <span class="contact-link-label">Facebook</span>
+                                <span class="contact-link-value">VANTA STUDIO</span>
+                            </span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+           SECTION 12: FOOTER
+           EDIT: Change social links and copyright year.
+           ============================================================ -->
+        <footer class="site-footer" role="contentinfo">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="footer-brand-name">VANTA STUDIO</span>
+                    <span class="footer-brand-tag">Photography</span>
+                </div>
+                <div class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="footer-copyright">&copy; 2026 VANTA STUDIO. All rights reserved.</span>
+                <span class="footer-credit">Crafted with passion in Cairo</span>
+            </div>
+        </footer>
+    </main>
+
+    <!-- ============================================================
+       SECTION 13: LIGHTBOX (Image Gallery Popup)
+       This opens when you click "View Project" on portfolio cards.
+       No edits needed - works automatically!
+       ============================================================ -->
+    <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Project gallery">
+        <div class="lightbox-backdrop"></div>
+        <div class="lightbox-container">
+            <button class="lightbox-close magnetic" id="lightboxClose" aria-label="Close image gallery">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="lightbox-header">
+                <span class="lightbox-category" id="lightboxCategory">Project</span>
+                <h3 id="lightboxTitle">Title</h3>
+            </div>
+            <div class="lightbox-grid" id="lightboxGrid"></div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+       JAVASCRIPT - All the magic happens here!
+       This controls animations, particles, sliders, and interactions.
+
+       BEGINNER TIP: You can change numbers to adjust speeds:
+       - Lower number = Faster
+       - Higher number = Slower
+       ============================================================ -->
+    <script>
+        // =====================
+        // PRELOADER ANIMATION
+        // Counts from 0% to 100% before showing the website
+        // =====================
+        const preloader = document.getElementById('preloader');
+        const preloaderCounter = document.getElementById('preloaderCounter');
+        let loadProgress = 0;
+
+        // This runs every 80 milliseconds to update the counter
+        const loadInterval = setInterval(() => {
+            // Add random amount each time (feels more natural)
+            loadProgress += Math.random() * 15 + 5;
+
+            // When we reach 100%, hide the preloader
+            if (loadProgress >= 100) {
+                loadProgress = 100;
+                clearInterval(loadInterval);
+                setTimeout(() => {
+                    preloader.classList.add('hidden');
+                    setTimeout(() => {
+                        preloader.style.display = 'none';
+                        // Start all animations after preloader finishes
+                        initAnimations();
+                    }, 800);
+                }, 400);
+            }
+            preloaderCounter.textContent = Math.floor(loadProgress);
+        }, 80);
+
+        // =====================
+        // MAGNETIC BUTTONS
+        // Buttons that pull toward your cursor when you hover
+        // =====================
+        document.querySelectorAll('.magnetic').forEach(el => {
+            el.addEventListener('mousemove', (e) => {
+                const rect = el.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                el.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+            });
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = 'translate(0, 0)';
+            });
+        });
+
+        // =====================
+        // HEADER SCROLL EFFECT
+        // Header becomes smaller and blurred when you scroll down
+        // =====================
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // =====================
+        // MOBILE MENU
+        // Opens/closes the full-screen menu on phones
+        // =====================
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
+        });
+
+        // =====================
+        // ACTIVE NAV LINK HIGHLIGHT
+        // Shows which section you're currently viewing
+        // =====================
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const top = section.offsetTop - 200;
+                if (window.scrollY >= top) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // =====================
+        // TYPEWRITER EFFECT
+        // Auto-typing text that cycles through phrases
+        // EDIT: Change the phrases array below
+        // =====================
+        const typewriterEl = document.getElementById('typewriter');
+        // EDIT THESE: The phrases that type out
+        const phrases = [
+            'Storytelling through light.', 
+            'Capturing timeless moments.', 
+            'Where art meets emotion.'
+        ];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typeDelay = 100;
+
+        function typeWriter() {
+            const current = phrases[phraseIndex];
+
+            if (isDeleting) {
+                // Removing characters
+                typewriterEl.textContent = current.substring(0, charIndex - 1);
+                charIndex--;
+                typeDelay = 50; // Faster when deleting
+            } else {
+                // Adding characters
+                typewriterEl.textContent = current.substring(0, charIndex + 1);
+                charIndex++;
+                typeDelay = 100; // Normal speed when typing
+            }
+
+            // When finished typing, wait then start deleting
+            if (!isDeleting && charIndex === current.length) {
+                isDeleting = true;
+                typeDelay = 2000; // Wait 2 seconds before deleting
+            } 
+            // When finished deleting, move to next phrase
+            else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typeDelay = 500; // Wait before typing next phrase
+            }
+
+            setTimeout(typeWriter, typeDelay);
+        }
+
+        // =====================
+        // HERO CANVAS PARTICLES
+        // Floating gold particles with connecting lines
+        // EDIT: Change particleCount for more/fewer particles
+        // =====================
+        const canvas = document.getElementById('heroCanvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        const particleCount = 60; // EDIT: More = more particles
+
+        // Resize canvas to fill screen
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        // Particle class - each floating dot
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 0.5;
+                this.speedX = (Math.random() - 0.5) * 0.3;
+                this.speedY = (Math.random() - 0.5) * 0.3;
+                this.opacity = Math.random() * 0.5 + 0.1;
+                this.gold = Math.random() > 0.7; // 30% are gold, 70% are white
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                // Reset if particle goes off screen
+                if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+                    this.reset();
+                }
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = this.gold 
+                    ? `rgba(201, 169, 110, ${this.opacity})` // Gold color
+                    : `rgba(255, 255, 255, ${this.opacity * 0.3})`; // White color
+                ctx.fill();
+            }
+        }
+
+        // Create all particles
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
+
+        // Animation loop
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Update and draw each particle
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+
+            // Draw connection lines between nearby particles
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+                    // Only connect particles within 150px of each other
+                    if (dist < 150) {
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.strokeStyle = `rgba(201, 169, 110, ${0.08 * (1 - dist / 150)})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+                    }
+                }
+            }
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+        // =====================
+        // SCROLL REVEAL ANIMATIONS
+        // Elements fade in when you scroll to them
+        // =====================
+        function initAnimations() {
+            // Start the typewriter
+            typeWriter();
+
+            // Create observer for scroll reveals
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 }); // Trigger when 15% visible
+
+            // Watch these elements for scroll reveal
+            document.querySelectorAll('.portfolio-card, .service-card, .stat-card, .reveal-text, .contact-link').forEach(el => {
+                revealObserver.observe(el);
+            });
+
+            // Reveal hero title words with stagger
+            document.querySelectorAll('.title-word').forEach((word, i) => {
+                setTimeout(() => word.classList.add('revealed'), 600 + i * 200);
+            });
+
+            // Reveal about title lines with stagger
+            document.querySelectorAll('.about-title-line').forEach((line, i) => {
+                setTimeout(() => line.classList.add('revealed'), 200 + i * 150);
+            });
+        }
+
+        // =====================
+        // ANIMATED NUMBER COUNTERS
+        // Numbers count up when scrolled into view
+        // =====================
+        const statNumbers = document.querySelectorAll('.stat-number');
+
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = parseInt(entry.target.dataset.count);
+                    const duration = 2000; // 2 seconds to count
+                    const start = performance.now();
+
+                    const animate = (now) => {
+                        const elapsed = now - start;
+                        const progress = Math.min(elapsed / duration, 1);
+                        // Easing function for smooth deceleration
+                        const ease = 1 - Math.pow(1 - progress, 4);
+                        entry.target.textContent = Math.floor(target * ease);
+
+                        if (progress < 1) requestAnimationFrame(animate);
+                    };
+                    requestAnimationFrame(animate);
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        statNumbers.forEach(num => statsObserver.observe(num));
+
+        // =====================
+        // PORTFOLIO CARD REVEAL
+        // Dark overlay slides away when card enters viewport
+        // =====================
+        const portfolioCards = document.querySelectorAll('.portfolio-card');
+        const portfolioObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    portfolioObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        portfolioCards.forEach(card => portfolioObserver.observe(card));
+
+        // =====================
+        // TESTIMONIALS SLIDER
+        // Auto-rotating client reviews with manual controls
+        // =====================
+        const testimonialTrack = document.getElementById('testimonialTrack');
+        const testSlides = document.querySelectorAll('.testimonial-slide');
+        const testDots = document.querySelectorAll('.testimonial-dots .dot');
+        const testPrev = document.getElementById('testPrev');
+        const testNext = document.getElementById('testNext');
+        let currentSlide = 0;
+
+        function goToSlide(index) {
+            testSlides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            testDots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+            currentSlide = index;
+        }
+
+        // Previous button
+        testPrev.addEventListener('click', () => {
+            goToSlide((currentSlide - 1 + testSlides.length) % testSlides.length);
+        });
+
+        // Next button
+        testNext.addEventListener('click', () => {
+            goToSlide((currentSlide + 1) % testSlides.length);
+        });
+
+        // Dot buttons
+        testDots.forEach((dot, i) => {
+            dot.addEventListener('click', () => goToSlide(i));
+        });
+
+        // Auto-advance every 6 seconds
+        setInterval(() => {
+            goToSlide((currentSlide + 1) % testSlides.length);
+        }, 6000);
+
+        // =====================
+        // LIGHTBOX (Image Gallery Popup)
+        // Opens when clicking "View Project" on portfolio cards
+        // =====================
+        const lightbox = document.getElementById('lightbox');
+        const lightboxClose = document.getElementById('lightboxClose');
+        const lightboxTitle = document.getElementById('lightboxTitle');
+        const lightboxCategory = document.getElementById('lightboxCategory');
+        const lightboxGrid = document.getElementById('lightboxGrid');
+
+        // Open lightbox when clicking portfolio card buttons
+        document.querySelectorAll('.portfolio-card-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const card = btn.closest('.portfolio-card');
+                // Get all images from data-images attribute
+                const images = (card?.dataset.images || '')
+                    .split(',')
+                    .map(src => src.trim())
+                    .filter(Boolean);
+                const title = card?.querySelector('h3')?.textContent || 'Project';
+                const category = card?.querySelector('.portfolio-card-category')?.textContent || 'Photography';
+                openLightbox(title, category, images);
+            });
+        });
+
+        function openLightbox(title, category, images) {
+            lightboxTitle.textContent = title;
+            lightboxCategory.textContent = category;
+            lightboxGrid.innerHTML = '';
+
+            // Create image elements with staggered animation
+            images.forEach((src, i) => {
+                const item = document.createElement('div');
+                item.className = 'lightbox-item';
+                item.style.animationDelay = `${i * 0.1}s`;
+                const img = document.createElement('img');
+                img.src = src;
+                img.alt = title + ' — VANTA STUDIO portfolio image';
+                img.loading = 'lazy';
+                item.appendChild(img);
+                lightboxGrid.appendChild(item);
+            });
+
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling behind lightbox
+        }
+
+        // Close lightbox methods
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target.classList.contains('lightbox-backdrop')) closeLightbox();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox(); // Press ESC to close
+        });
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+            setTimeout(() => { lightboxGrid.innerHTML = ''; }, 400);
+        }
+
+        // =====================
+        // SMOOTH SCROLL
+        // Smoothly scroll to sections when clicking navigation links
+        // =====================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // =====================
+        // PARALLAX SCROLL EFFECT
+        // Hero portrait moves slightly when scrolling (depth effect)
+        // =====================
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const heroPortrait = document.getElementById('heroPortrait');
+            if (heroPortrait && scrolled < window.innerHeight) {
+                // Move portrait slower than scroll (parallax)
+                heroPortrait.style.transform = `translateY(${scrolled * 0.15}px)`;
+            }
+        });
+    </script>
+</body>
+</html>
